@@ -1,0 +1,2743 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "sortui",
+  "homepage": "https://sortui.dev",
+  "items": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "A vertically stacked set of headers that expand and collapse their panels, revealing one section of content at a time.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-card": "0 -1px 0 oklch(1 0 0 / 15%), 0 1px 1px -1px oklch(0.371 0 0 / 6%), 0 2px 2px -1px oklch(0.371 0 0 / 3%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "ai-chat-composer",
+      "type": "registry:ui",
+      "title": "AI Chat Composer",
+      "description": "A message composer for AI chats: one row with actions around the text that opens into a column once the text wraps or attachments are added, with an expand action and a send button.",
+      "categories": [
+        "chat"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field-border": "var(--field-border)",
+          "radius-14": "0.875rem",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "@base-ui/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button",
+        "@sortui/spinner"
+      ],
+      "files": [
+        {
+          "path": "components/ui/ai-chat-composer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "A callout that surfaces important contextual information — such as a status update or a failure — without interrupting the user's flow.",
+      "categories": [
+        "feedback"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "A modal confirmation dialog that interrupts the user before a destructive or irreversible action is carried out.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-dialog": "0 -1px 0 oklch(1 0 0 / 15%), 0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "Constrains its content to a fixed width-to-height ratio so media, embeds, and placeholders keep their shape at any container size.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/aspect-ratio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "type": "registry:ui",
+      "title": "Attachment",
+      "description": "An uploaded or in-flight file as a picture, a card that names its type or a row (full or compact) with its icon, name and metadata, with its upload state and actions.",
+      "categories": [
+        "chat"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-1": "var(--fill-1)",
+          "color-control-hover": "var(--control-hover)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "control-hover": "oklch(0.9925 0 0)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "control-hover": "oklch(0.237 0 0)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/attachment.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "Displays a user's image with an automatic initials fallback, plus optional status badge and stacked group with overflow count.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A small inline label for surfacing statuses, categories, and metadata next to other content.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-2": "var(--fill-2)",
+          "color-control": "var(--control)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "control": "oklch(1 0 0)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "control": "oklch(0.269 0 0)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Displays the path to the current page as a hierarchy of links so users can see where they are and jump back to any parent level.",
+      "categories": [
+        "navigation"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/breadcrumb.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "bubble",
+      "type": "registry:ui",
+      "title": "Bubble",
+      "description": "A chat message bubble for conversation UIs, with sender alignment, tonal variants, grouped messages, and emoji reactions.",
+      "categories": [
+        "chat"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-3": "var(--fill-3)",
+          "color-control-hover": "var(--control-hover)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-secondary-control": "inset 0 1px 0 oklch(1 0 0 / 15%), inset 0 -1px 0 oklch(0 0 0 / 8%), 0 1px 2px -1px oklch(0 0 0 / 4%), 0 2px 3px -1px oklch(0 0 0 / 3%)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-3": "oklch(0.556 0 0 / 12%)",
+          "control-hover": "oklch(0.9925 0 0)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-3": "oklch(1 0 0 / 14%)",
+          "control-hover": "oklch(0.237 0 0)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bubble.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Triggers an action. Six emphasis levels, five sizes with icon-only counterparts and an optional count chip.",
+      "categories": [
+        "actions"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-3": "var(--fill-3)",
+          "color-control": "var(--control)",
+          "color-control-hover": "var(--control-hover)",
+          "color-primary-border": "var(--primary-border)",
+          "color-primary-border-disabled": "var(--primary-border-disabled)",
+          "color-control-border": "var(--control-border)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-primary-control": "inset 0 0 0 0.5px var(--primary-border), inset 0 1px 0 oklch(1 0 0 / 20%), inset 0 0 3px oklch(1 0 0 / 20%), 0 3px 3px -2px oklch(0 0 0 / 20%)",
+          "shadow-primary-control-disabled": "inset 0 0 0 0.5px var(--primary-border-disabled), inset 0 0.5px 0 oklch(1 0 0 / 50%), inset 0 0 3px oklch(1 0 0 / 20%), 0 3px 3px -2px oklch(0 0 0 / 20%)",
+          "shadow-secondary-control": "inset 0 1px 0 oklch(1 0 0 / 15%), inset 0 -1px 0 oklch(0 0 0 / 8%), 0 1px 2px -1px oklch(0 0 0 / 4%), 0 2px 3px -1px oklch(0 0 0 / 3%)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-3": "oklch(0.556 0 0 / 12%)",
+          "control": "oklch(1 0 0)",
+          "control-hover": "oklch(0.9925 0 0)",
+          "primary-border": "oklch(0.398 0.195 277.366 / 40%)",
+          "primary-border-disabled": "oklch(0.145 0 0 / 40%)",
+          "control-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-3": "oklch(1 0 0 / 14%)",
+          "control": "oklch(0.269 0 0)",
+          "control-hover": "oklch(0.237 0 0)",
+          "primary-border": "oklch(1 0 0 / 10%)",
+          "primary-border-disabled": "oklch(1 0 0 / 15%)",
+          "control-border": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "Groups related buttons and controls into a single connected segment with shared borders and rounded outer corners.",
+      "categories": [
+        "actions"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-control": "var(--control)",
+          "color-control-border": "var(--control-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-secondary-control": "inset 0 1px 0 oklch(1 0 0 / 15%), inset 0 -1px 0 oklch(0 0 0 / 8%), 0 1px 2px -1px oklch(0 0 0 / 4%), 0 2px 3px -1px oklch(0 0 0 / 3%)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "control": "oklch(1 0 0)",
+          "control-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "control": "oklch(0.269 0 0)",
+          "control-border": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@sortui/separator"
+      ],
+      "files": [
+        {
+          "path": "components/ui/button-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "A month grid for picking a single date, multiple dates, or a date range, built on react-day-picker.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "react-day-picker@latest",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "An opaque surface that groups related content, with slots for a header, title, description, action, content, and footer.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-card": "0 -1px 0 oklch(1 0 0 / 15%), 0 1px 1px -1px oklch(0.371 0 0 / 6%), 0 2px 2px -1px oklch(0.371 0 0 / 3%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "A slide container for cycling through related content, built on Embla with previous/next buttons and arrow-key navigation.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [
+        "cn",
+        "embla-carousel-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/carousel.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "Recharts-based building blocks — a themed container, tooltip, and legend that pull series labels and colors from a single chart config.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "recharts@3.8.0"
+      ],
+      "registryDependencies": [
+        "@sortui/card"
+      ],
+      "files": [
+        {
+          "path": "components/ui/chart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "chat-sidebar-01",
+      "type": "registry:block",
+      "title": "Chat Sidebar",
+      "description": "Chat history in a sidebar: new chat with its shortcut, search, conversations grouped by date with pinning, per-chat actions on hover and the account menu.",
+      "categories": [
+        "ai"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        }
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/avatar",
+        "@sortui/dropdown-menu",
+        "@sortui/kbd",
+        "@sortui/sidebar"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/chat-sidebar-01/components/chat-sidebar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "chat-thread-01",
+      "type": "registry:block",
+      "title": "Chat Thread",
+      "description": "A conversation with an assistant: your messages and attachments on the right, answers across the full width with folded reasoning, lists and bold text, copy / feedback / share / retry actions, and a thinking state.",
+      "categories": [
+        "ai"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/attachment",
+        "@sortui/bubble",
+        "@sortui/button",
+        "@sortui/collapsible",
+        "@sortui/message",
+        "@sortui/message-scroller",
+        "@sortui/tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/chat-thread-01/components/chat-thread.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "chat-welcome-01",
+      "type": "registry:block",
+      "title": "Chat Welcome",
+      "description": "The empty state of a new chat: a greeting, the prompt input and suggestion buttons that start a conversation in one click.",
+      "categories": [
+        "ai"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-3xl--letter-spacing": "-0.02em"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button",
+        "@sortui/prompt-input-01"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/chat-welcome-01/components/chat-welcome.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "A control that lets the user toggle a single option between checked and unchecked states.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-3": "var(--fill-3)"
+        },
+        "light": {
+          "fill-3": "oklch(0.556 0 0 / 12%)"
+        },
+        "dark": {
+          "fill-3": "oklch(1 0 0 / 14%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "A panel that expands and collapses to reveal or hide secondary content behind a trigger.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "An input that filters a list of options as the user types and lets them pick a value from a popup.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-control": "var(--control)",
+          "color-control-border": "var(--control-border)",
+          "color-field-border": "var(--field-border)",
+          "radius-14": "0.875rem",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "control": "oklch(1 0 0)",
+          "control-border": "oklch(0.145 0 0 / 10%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "control": "oklch(0.269 0 0)",
+          "control-border": "oklch(1 0 0 / 10%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button",
+        "@sortui/input-group"
+      ],
+      "files": [
+        {
+          "path": "components/ui/combobox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "A searchable command menu for finding and running actions, with grouped, keyboard-navigable results and built-in filtering.",
+      "categories": [
+        "menus"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-dialog": "0 -1px 0 oklch(1 0 0 / 15%), 0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/dialog",
+        "@sortui/input-group"
+      ],
+      "files": [
+        {
+          "path": "components/ui/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "A menu of contextual actions that opens at the pointer position when the user right-clicks (or long-presses) a target element.",
+      "categories": [
+        "menus"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "radius-14": "0.875rem",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A modal window over the page content. Composed from focused subcomponents.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-dialog": "0 -1px 0 oklch(1 0 0 / 15%), 0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "diff",
+      "type": "registry:ui",
+      "title": "Diff",
+      "description": "Shows the changes to a file as a unified or split diff — line numbers, added and removed lines, +/- counts in the header and syntax highlighting — from a patch or from two versions of the file.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-1": "var(--fill-1)",
+          "color-syntax-foreground": "var(--syntax-foreground)",
+          "color-syntax-comment": "var(--syntax-comment)",
+          "color-syntax-keyword": "var(--syntax-keyword)",
+          "color-syntax-string": "var(--syntax-string)",
+          "color-syntax-constant": "var(--syntax-constant)",
+          "color-syntax-function": "var(--syntax-function)",
+          "color-syntax-variable": "var(--syntax-variable)",
+          "color-syntax-tag": "var(--syntax-tag)",
+          "color-syntax-added": "var(--syntax-added)",
+          "color-syntax-removed": "var(--syntax-removed)",
+          "color-syntax-added-word": "var(--syntax-added-word)",
+          "color-syntax-removed-word": "var(--syntax-removed-word)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "shadow-card": "0 -1px 0 oklch(1 0 0 / 15%), 0 1px 1px -1px oklch(0.371 0 0 / 6%), 0 2px 2px -1px oklch(0.371 0 0 / 3%)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "syntax-foreground": "oklch(0.145 0 0)",
+          "syntax-comment": "oklch(0.4975 0 0)",
+          "syntax-keyword": "oklch(0.577 0.245 27.325)",
+          "syntax-string": "oklch(0.282 0.091 267.935)",
+          "syntax-constant": "oklch(0.488 0.243 264.376)",
+          "syntax-function": "oklch(0.432 0.232 292.759)",
+          "syntax-variable": "oklch(0.666 0.179 58.318)",
+          "syntax-tag": "oklch(0.527 0.154 150.069)",
+          "syntax-added": "oklch(0.723 0.219 149.579 / 8%)",
+          "syntax-removed": "oklch(0.637 0.237 25.331 / 8%)",
+          "syntax-added-word": "oklch(0.723 0.219 149.579 / 20%)",
+          "syntax-removed-word": "oklch(0.637 0.237 25.331 / 20%)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "syntax-foreground": "oklch(0.985 0 0)",
+          "syntax-comment": "oklch(0.708 0 0)",
+          "syntax-keyword": "oklch(0.704 0.191 22.216)",
+          "syntax-string": "oklch(0.882 0.059 254.128)",
+          "syntax-constant": "oklch(0.707 0.165 254.624)",
+          "syntax-function": "oklch(0.702 0.183 293.541)",
+          "syntax-variable": "oklch(0.837 0.128 66.29)",
+          "syntax-tag": "oklch(0.871 0.15 154.449)",
+          "syntax-added": "oklch(0.723 0.219 149.579 / 15%)",
+          "syntax-removed": "oklch(0.637 0.237 25.331 / 10%)",
+          "syntax-added-word": "oklch(0.723 0.219 149.579 / 30%)",
+          "syntax-removed-word": "oklch(0.637 0.237 25.331 / 30%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "diff",
+        "lucide-react",
+        "shiki"
+      ],
+      "files": [
+        {
+          "path": "components/ui/diff.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "title": "Direction",
+      "description": "A context provider that switches Base UI components between left-to-right and right-to-left reading directions.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/direction.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "A panel that slides in from an edge of the screen and can be swiped away, for supplementary content and quick actions.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-3": "var(--fill-3)",
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-dialog": "0 -1px 0 oklch(1 0 0 / 15%), 0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "fill-3": "oklch(0.556 0 0 / 12%)"
+        },
+        "dark": {
+          "fill-3": "oklch(1 0 0 / 14%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/drawer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "A menu of actions or options that opens from a trigger element, with support for groups, submenus, checkbox and radio items.",
+      "categories": [
+        "menus"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "radius-14": "0.875rem",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "effort-slider-01",
+      "type": "registry:block",
+      "title": "Effort Slider",
+      "description": "A model-effort picker: a stepped slider whose thumb is pulled toward the nearest level and springs onto it, with a cross-fading level name, a recommended mark and a pixel field that lights the track at the top level.",
+      "categories": [
+        "ai"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-4": "var(--fill-4)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-4": "oklch(0.556 0 0 / 16%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-4": "oklch(1 0 0 / 18%)"
+        }
+      },
+      "dependencies": [
+        "@base-ui/react",
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/effort-slider-01/components/effort-slider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/blocks/effort-slider-01/lib/pixel-field.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "A placeholder state for screens with no data yet, combining an icon, a title, a description, and follow-up actions.",
+      "categories": [
+        "feedback"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/empty.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "Composable building blocks for form fields — label, description, error, and layout primitives that wrap any control.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-1": "var(--fill-1)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-1": "oklch(0.556 0 0 / 5%)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-1": "oklch(1 0 0 / 5%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@sortui/label",
+        "@sortui/separator"
+      ],
+      "files": [
+        {
+          "path": "components/ui/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-icon",
+      "type": "registry:ui",
+      "title": "File Icon",
+      "description": "A coloured icon for each kind of file — document, spreadsheet, presentation, PDF, image, video, music, archive or a plain file — sized like a Lucide icon in attachments and lists.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-control-border": "var(--control-border)"
+        },
+        "light": {
+          "control-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "control-border": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/file-icon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "A card that previews linked content, such as a user or project, when the pointer rests on its trigger.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "radius-14": "0.875rem",
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "A single-line text field. Three heights that line up with Button.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-field": "var(--field)",
+          "color-field-border": "var(--field-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "field": "oklch(1 0 0 / 2.5%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "Groups an input or textarea with icons, text, buttons, and keyboard hints inside a single field container.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-field-border": "var(--field-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@sortui/button",
+        "@sortui/input",
+        "@sortui/textarea"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "A one-time password input with individual character slots, caret animation, and paste support for verification codes.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-field-border": "var(--field-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "input-otp",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input-otp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "description": "A composable list row that arranges media, text content, and actions into a single flexible container.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@sortui/separator"
+      ],
+      "files": [
+        {
+          "path": "components/ui/item.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "Displays a keyboard key or key combination, used for surfacing shortcut hints in menus, tooltips, and documentation.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/kbd.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "An accessible caption for a form control, associated via htmlFor and styled to dim automatically when its control is disabled.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "marker",
+      "type": "registry:ui",
+      "title": "Marker",
+      "description": "A muted inline label row with an optional icon for annotating lists, feeds, and timelines — usable as a plain note, a centered separator, or a bordered section heading.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/marker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "A horizontal bar of persistent dropdown menus, like the command menus along the top of a desktop application.",
+      "categories": [
+        "navigation"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "components/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "registry:ui",
+      "title": "Message",
+      "description": "A layout wrapper for chat threads that positions an avatar, message bubbles, a sender header, and a timestamp footer, with start or end alignment per message.",
+      "categories": [
+        "chat"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/message.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "title": "Message Scroller",
+      "description": "A scroll container for chat and feed interfaces that starts at the latest message, keeps its position while history changes, and shows a button to jump back to the newest content.",
+      "categories": [
+        "chat"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-control": "var(--control)",
+          "color-control-hover": "var(--control-hover)",
+          "color-control-border": "var(--control-border)",
+          "shadow-secondary-control": "inset 0 1px 0 oklch(1 0 0 / 15%), inset 0 -1px 0 oklch(0 0 0 / 8%), 0 1px 2px -1px oklch(0 0 0 / 4%), 0 2px 3px -1px oklch(0 0 0 / 3%)"
+        },
+        "light": {
+          "control": "oklch(1 0 0)",
+          "control-hover": "oklch(0.9925 0 0)",
+          "control-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "control": "oklch(0.269 0 0)",
+          "control-hover": "oklch(0.237 0 0)",
+          "control-border": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/message-scroller.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "model-picker-01",
+      "type": "registry:block",
+      "title": "Model Picker",
+      "description": "A header menu for choosing the model a chat runs on — each option with a one-line description and a Pro badge — plus an upgrade entry.",
+      "categories": [
+        "ai"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/badge",
+        "@sortui/button",
+        "@sortui/dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/model-picker-01/components/model-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "description": "A styled wrapper around the browser's built-in select element for compact, dependency-free option pickers that use the platform's native dropdown UI.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-field-border": "var(--field-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/native-select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "A horizontal menu of links and animated dropdown panels for top-level site or product navigation.",
+      "categories": [
+        "navigation"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "radius-14": "0.875rem",
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Navigation between pages of a long list, with previous/next controls, numbered page links, and an ellipsis for collapsed ranges.",
+      "categories": [
+        "navigation"
+      ],
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "A floating panel anchored to a trigger element, for lightweight details and actions that don't need a full dialog.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "radius-14": "0.875rem",
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Displays a bar or circular ring that shows how far a task or quota has progressed toward completion, with optional label and value text.",
+      "categories": [
+        "feedback"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "prompt-input-01",
+      "type": "registry:block",
+      "title": "Prompt Input",
+      "description": "A chat composer: a growing message field, file attachments with previews, a tools menu (web search, deep research, image), and a send button that turns into stop while the answer streams.",
+      "categories": [
+        "ai"
+      ],
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/attachment",
+        "@sortui/dropdown-menu",
+        "@sortui/input-group",
+        "@sortui/tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/prompt-input-01/components/prompt-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "A set of mutually exclusive options where selecting one choice deselects the others.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-3": "var(--fill-3)"
+        },
+        "light": {
+          "fill-3": "oklch(0.556 0 0 / 12%)"
+        },
+        "dark": {
+          "fill-3": "oklch(1 0 0 / 14%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "Resizable panel groups with draggable, keyboard-accessible handles for building split views and adjustable layouts.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "cn",
+        "react-resizable-panels"
+      ],
+      "files": [
+        {
+          "path": "components/ui/resizable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "A scrollable region with a custom, consistently styled scrollbar that replaces the native one across browsers and platforms.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "A dropdown control for picking one option from a list, opened from a trigger button and submitted like a native form field.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-field-border": "var(--field-border)",
+          "radius-14": "0.875rem",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "A thin rule that visually and semantically divides content, either horizontally between sections or vertically between inline items.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "A panel that slides in from an edge of the screen to show supplementary content or actions without leaving the current page.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-sm--letter-spacing": "-0.005em",
+          "shadow-dialog": "0 -1px 0 oklch(1 0 0 / 15%), 0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "A composable side navigation panel with collapsible, floating, and inset modes for building application layouts.",
+      "categories": [
+        "navigation"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-3": "var(--fill-3)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        },
+        "light": {
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-3": "oklch(0.556 0 0 / 12%)"
+        },
+        "dark": {
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-3": "oklch(1 0 0 / 14%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/button",
+        "@sortui/input",
+        "@sortui/separator",
+        "@sortui/sheet",
+        "@sortui/skeleton",
+        "@sortui/tooltip",
+        "@sortui/use-mobile"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "simple-icon",
+      "type": "registry:ui",
+      "title": "Simple Icon",
+      "description": "Renders a brand icon from Simple Icons — GitHub, Apple, Google, Figma — as a currentColor svg that sizes like a Lucide icon inside buttons and text.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [
+        "cn",
+        "simple-icons"
+      ],
+      "files": [
+        {
+          "path": "components/ui/simple-icon.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "A pulsing placeholder that reserves the shape of content while it loads.",
+      "categories": [
+        "feedback"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sleep-widget-01",
+      "type": "registry:block",
+      "title": "Sleep Widget",
+      "description": "Last night's sleep: the stages along a usage bar with a time axis, the totals per stage, a smart alarm switch and a wake-window slider.",
+      "categories": [
+        "widgets"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-chart-7": "var(--chart-7)",
+          "color-chart-8": "var(--chart-8)",
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-3": "var(--fill-3)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xl--letter-spacing": "-0.015em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "chart-7": "oklch(0.718 0.202 349.761)",
+          "chart-8": "oklch(0.811 0.111 293.571)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-3": "oklch(0.556 0 0 / 12%)"
+        },
+        "dark": {
+          "chart-7": "oklch(0.718 0.202 349.761)",
+          "chart-8": "oklch(0.811 0.111 293.571)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-3": "oklch(1 0 0 / 14%)"
+        }
+      },
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@sortui/card",
+        "@sortui/separator",
+        "@sortui/switch",
+        "@sortui/usage-bar",
+        "@sortui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/sleep-widget-01/components/sleep-widget.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "A draggable control for selecting a numeric value or range within fixed bounds.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "An opinionated toast component for showing brief, stackable notifications — successes, errors, and undoable actions — from anywhere in your app.",
+      "categories": [
+        "feedback"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-3": "var(--fill-3)",
+          "color-primary-border": "var(--primary-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)",
+          "shadow-primary-control": "inset 0 0 0 0.5px var(--primary-border), inset 0 1px 0 oklch(1 0 0 / 20%), inset 0 0 3px oklch(1 0 0 / 20%), 0 3px 3px -2px oklch(0 0 0 / 20%)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-3": "oklch(0.556 0 0 / 12%)",
+          "primary-border": "oklch(0.398 0.195 277.366 / 40%)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-3": "oklch(1 0 0 / 14%)",
+          "primary-border": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "sonner",
+        "next-themes",
+        "cn",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sonner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "An animated loading indicator for pending actions and in-flight state.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/spinner.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "A toggle control for switching a single setting on or off instantly.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-3": "var(--fill-3)"
+        },
+        "light": {
+          "fill-3": "oklch(0.556 0 0 / 12%)"
+        },
+        "dark": {
+          "fill-3": "oklch(1 0 0 / 14%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "A styled HTML table for presenting structured data in rows and columns, with header, body, footer, and caption parts and a built-in horizontal-scroll container.",
+      "categories": [
+        "content"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "A set of layered panels where selecting a tab in the list shows its panel and hides the others.",
+      "categories": [
+        "navigation"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-2": "var(--fill-2)",
+          "color-raised": "var(--raised)",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "raised": "oklch(1 0 0)"
+        },
+        "dark": {
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "raised": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "A multi-line text field for longer free-form input such as notes, descriptions, and messages, with content-based auto-sizing.",
+      "categories": [
+        "forms"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-field": "var(--field)",
+          "color-field-border": "var(--field-border)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "field-border": "oklch(0.145 0 0 / 10%)"
+        },
+        "dark": {
+          "field": "oklch(1 0 0 / 2.5%)",
+          "field-border": "oklch(1 0 0 / 15%)"
+        }
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "title": "SortUI theme",
+      "description": "The SortUI tokens v2 as one theme: opaque surfaces with a dark ladder (card 900, popover 800), the translucent fill ladder fill-1…4, the roles field / raised / control, translucent lines (border, field-border, control-border), AA text colours (muted-foreground neutral-550, destructive-foreground red-700) and the fixed radius ladder. Installs over your theme variables.",
+      "categories": [
+        "theme"
+      ],
+      "cssVars": {
+        "theme": {
+          "font-heading": "var(--font-sans)",
+          "color-sidebar-ring": "var(--sidebar-ring)",
+          "color-sidebar-border": "var(--sidebar-border)",
+          "color-sidebar-accent-foreground": "var(--sidebar-accent-foreground)",
+          "color-sidebar-accent": "var(--sidebar-accent)",
+          "color-sidebar-primary-foreground": "var(--sidebar-primary-foreground)",
+          "color-sidebar-primary": "var(--sidebar-primary)",
+          "color-sidebar-foreground": "var(--sidebar-foreground)",
+          "color-sidebar": "var(--sidebar)",
+          "color-chart-10": "var(--chart-10)",
+          "color-chart-9": "var(--chart-9)",
+          "color-chart-8": "var(--chart-8)",
+          "color-chart-7": "var(--chart-7)",
+          "color-chart-6": "var(--chart-6)",
+          "color-chart-5": "var(--chart-5)",
+          "color-chart-4": "var(--chart-4)",
+          "color-chart-3": "var(--chart-3)",
+          "color-chart-2": "var(--chart-2)",
+          "color-chart-1": "var(--chart-1)",
+          "color-ring": "var(--ring)",
+          "color-input": "var(--input)",
+          "color-border": "var(--border)",
+          "color-destructive": "var(--destructive)",
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-accent-foreground": "var(--accent-foreground)",
+          "color-accent": "var(--accent)",
+          "color-muted-foreground": "var(--muted-foreground)",
+          "color-muted": "var(--muted)",
+          "color-secondary-foreground": "var(--secondary-foreground)",
+          "color-secondary": "var(--secondary)",
+          "color-primary-foreground": "var(--primary-foreground)",
+          "color-primary": "var(--primary)",
+          "color-popover-foreground": "var(--popover-foreground)",
+          "color-popover": "var(--popover)",
+          "color-card-foreground": "var(--card-foreground)",
+          "color-card": "var(--card)",
+          "color-foreground": "var(--foreground)",
+          "color-background": "var(--background)",
+          "color-syntax-foreground": "var(--syntax-foreground)",
+          "color-syntax-comment": "var(--syntax-comment)",
+          "color-syntax-keyword": "var(--syntax-keyword)",
+          "color-syntax-string": "var(--syntax-string)",
+          "color-syntax-constant": "var(--syntax-constant)",
+          "color-syntax-function": "var(--syntax-function)",
+          "color-syntax-variable": "var(--syntax-variable)",
+          "color-syntax-tag": "var(--syntax-tag)",
+          "color-syntax-added": "var(--syntax-added)",
+          "color-syntax-removed": "var(--syntax-removed)",
+          "color-syntax-added-word": "var(--syntax-added-word)",
+          "color-syntax-removed-word": "var(--syntax-removed-word)",
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "color-fill-3": "var(--fill-3)",
+          "color-fill-4": "var(--fill-4)",
+          "color-field": "var(--field)",
+          "color-raised": "var(--raised)",
+          "color-control": "var(--control)",
+          "color-control-hover": "var(--control-hover)",
+          "color-primary-border": "var(--primary-border)",
+          "color-primary-border-disabled": "var(--primary-border-disabled)",
+          "color-control-border": "var(--control-border)",
+          "color-field-border": "var(--field-border)",
+          "shadow-2xs": "0 1px 1px -1px oklch(0.371 0 0 / 6%), 0 2px 2px -1px oklch(0.371 0 0 / 3%)",
+          "shadow-xs": "0 1px 2px 0 oklch(0 0 0 / 4%)",
+          "shadow-sm": "0 1px 3px 0 oklch(0 0 0 / 6%), 0 1px 2px -1px oklch(0 0 0 / 6%)",
+          "shadow-md": "0 4px 6px -1px oklch(0 0 0 / 6%), 0 2px 4px -2px oklch(0 0 0 / 6%)",
+          "shadow-lg": "0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)",
+          "shadow-xl": "0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)",
+          "shadow-2xl": "0 25px 50px -12px oklch(0 0 0 / 20%)",
+          "shadow-primary-control": "inset 0 0 0 0.5px var(--primary-border), inset 0 1px 0 oklch(1 0 0 / 20%), inset 0 0 3px oklch(1 0 0 / 20%), 0 3px 3px -2px oklch(0 0 0 / 20%)",
+          "shadow-primary-control-disabled": "inset 0 0 0 0.5px var(--primary-border-disabled), inset 0 0.5px 0 oklch(1 0 0 / 50%), inset 0 0 3px oklch(1 0 0 / 20%), 0 3px 3px -2px oklch(0 0 0 / 20%)",
+          "shadow-secondary-control": "inset 0 1px 0 oklch(1 0 0 / 15%), inset 0 -1px 0 oklch(0 0 0 / 8%), 0 1px 2px -1px oklch(0 0 0 / 4%), 0 2px 3px -1px oklch(0 0 0 / 3%)",
+          "shadow-card": "0 -1px 0 oklch(1 0 0 / 15%), 0 1px 1px -1px oklch(0.371 0 0 / 6%), 0 2px 2px -1px oklch(0.371 0 0 / 3%)",
+          "shadow-dialog": "0 -1px 0 oklch(1 0 0 / 15%), 0 20px 25px -5px oklch(0 0 0 / 7%), 0 8px 10px -6px oklch(0 0 0 / 7%)",
+          "shadow-popover": "0 -1px 0 oklch(1 0 0 / 15%), 0 10px 15px -3px oklch(0 0 0 / 7%), 0 4px 6px -4px oklch(0 0 0 / 7%)",
+          "radius-xs": "0.25rem",
+          "radius-sm": "0.375rem",
+          "radius-md": "0.5rem",
+          "radius-lg": "0.625rem",
+          "radius-xl": "0.75rem",
+          "radius-14": "0.875rem",
+          "radius-2xl": "1rem",
+          "radius-3xl": "1.25rem",
+          "radius-4xl": "1.5rem",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)",
+          "text-5xl": "2.5rem",
+          "text-5xl--line-height": "calc(2.75 / 2.5)",
+          "text-6xl": "3rem",
+          "text-6xl--line-height": "1",
+          "text-7xl": "3.75rem",
+          "text-7xl--line-height": "1",
+          "text-8xl": "4.5rem",
+          "text-8xl--line-height": "1",
+          "text-9xl": "6rem",
+          "text-9xl--line-height": "1",
+          "font-weight-540": "540",
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-lg--letter-spacing": "-0.005em",
+          "text-xl--letter-spacing": "-0.01em",
+          "text-2xl--letter-spacing": "-0.015em",
+          "text-3xl--letter-spacing": "-0.02em",
+          "text-4xl--letter-spacing": "-0.025em",
+          "text-5xl--letter-spacing": "-0.025em",
+          "text-6xl--letter-spacing": "-0.025em",
+          "text-7xl--letter-spacing": "-0.025em",
+          "text-8xl--letter-spacing": "-0.025em",
+          "text-9xl--letter-spacing": "-0.025em"
+        },
+        "light": {
+          "background": "oklch(0.9925 0 0)",
+          "foreground": "oklch(0.145 0 0)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.145 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.145 0 0)",
+          "primary": "oklch(0.585 0.233 277.117)",
+          "primary-foreground": "oklch(1 0 0)",
+          "secondary": "oklch(0.97 0 0)",
+          "secondary-foreground": "oklch(0.145 0 0)",
+          "muted": "oklch(0.97 0 0)",
+          "muted-foreground": "oklch(0.4975 0 0)",
+          "accent": "oklch(0.556 0 0 / 8%)",
+          "accent-foreground": "oklch(0.145 0 0)",
+          "destructive": "oklch(0.637 0.237 25.331)",
+          "destructive-foreground": "oklch(0.505 0.213 27.518)",
+          "border": "oklch(0.145 0 0 / 10%)",
+          "input": "oklch(0.145 0 0 / 10%)",
+          "ring": "oklch(0.708 0 0)",
+          "chart-1": "oklch(0.865 0.127 207.078)",
+          "chart-2": "oklch(0.673 0.182 276.935)",
+          "chart-3": "oklch(0.837 0.128 66.29)",
+          "chart-4": "oklch(0.765 0.177 163.223)",
+          "chart-5": "oklch(0.511 0.096 186.391)",
+          "chart-6": "oklch(0.97 0 0)",
+          "chart-7": "oklch(0.718 0.202 349.761)",
+          "chart-8": "oklch(0.811 0.111 293.571)",
+          "chart-9": "oklch(0.841 0.238 128.85)",
+          "chart-10": "oklch(0.5 0.134 242.749)",
+          "radius": "0.625rem",
+          "sidebar": "oklch(0.985 0 0)",
+          "sidebar-foreground": "oklch(0.145 0 0)",
+          "sidebar-primary": "oklch(0.585 0.233 277.117)",
+          "sidebar-primary-foreground": "oklch(1 0 0)",
+          "sidebar-accent": "oklch(0.556 0 0 / 8%)",
+          "sidebar-accent-foreground": "oklch(0.145 0 0)",
+          "sidebar-border": "oklch(0.145 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.708 0 0)",
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)",
+          "fill-3": "oklch(0.556 0 0 / 12%)",
+          "fill-4": "oklch(0.556 0 0 / 16%)",
+          "field": "oklch(0.556 0 0 / 2.5%)",
+          "raised": "oklch(1 0 0)",
+          "control": "oklch(1 0 0)",
+          "control-hover": "oklch(0.9925 0 0)",
+          "primary-border": "oklch(0.398 0.195 277.366 / 40%)",
+          "primary-border-disabled": "oklch(0.145 0 0 / 40%)",
+          "control-border": "oklch(0.145 0 0 / 10%)",
+          "field-border": "oklch(0.145 0 0 / 10%)",
+          "syntax-foreground": "oklch(0.145 0 0)",
+          "syntax-comment": "oklch(0.4975 0 0)",
+          "syntax-keyword": "oklch(0.577 0.245 27.325)",
+          "syntax-string": "oklch(0.282 0.091 267.935)",
+          "syntax-constant": "oklch(0.488 0.243 264.376)",
+          "syntax-function": "oklch(0.432 0.232 292.759)",
+          "syntax-variable": "oklch(0.666 0.179 58.318)",
+          "syntax-tag": "oklch(0.527 0.154 150.069)",
+          "syntax-added": "oklch(0.723 0.219 149.579 / 8%)",
+          "syntax-removed": "oklch(0.637 0.237 25.331 / 8%)",
+          "syntax-added-word": "oklch(0.723 0.219 149.579 / 20%)",
+          "syntax-removed-word": "oklch(0.637 0.237 25.331 / 20%)"
+        },
+        "dark": {
+          "background": "oklch(0.145 0 0)",
+          "foreground": "oklch(0.985 0 0)",
+          "card": "oklch(0.205 0 0)",
+          "card-foreground": "oklch(0.985 0 0)",
+          "popover": "oklch(0.237 0 0)",
+          "popover-foreground": "oklch(0.985 0 0)",
+          "primary": "oklch(0.585 0.233 277.117)",
+          "primary-foreground": "oklch(1 0 0)",
+          "secondary": "oklch(0.182 0 0)",
+          "secondary-foreground": "oklch(0.985 0 0)",
+          "muted": "oklch(0.205 0 0)",
+          "muted-foreground": "oklch(0.708 0 0)",
+          "accent": "oklch(1 0 0 / 10%)",
+          "accent-foreground": "oklch(0.985 0 0)",
+          "destructive": "oklch(0.637 0.237 25.331)",
+          "destructive-foreground": "oklch(0.704 0.191 22.216)",
+          "border": "oklch(1 0 0 / 10%)",
+          "input": "oklch(1 0 0 / 10%)",
+          "ring": "oklch(0.556 0 0)",
+          "chart-1": "oklch(0.865 0.127 207.078)",
+          "chart-2": "oklch(0.673 0.182 276.935)",
+          "chart-3": "oklch(0.837 0.128 66.29)",
+          "chart-4": "oklch(0.765 0.177 163.223)",
+          "chart-5": "oklch(0.511 0.096 186.391)",
+          "chart-6": "oklch(0.371 0 0)",
+          "chart-7": "oklch(0.718 0.202 349.761)",
+          "chart-8": "oklch(0.811 0.111 293.571)",
+          "chart-9": "oklch(0.841 0.238 128.85)",
+          "chart-10": "oklch(0.5 0.134 242.749)",
+          "sidebar": "oklch(0.205 0 0)",
+          "sidebar-foreground": "oklch(0.985 0 0)",
+          "sidebar-primary": "oklch(0.585 0.233 277.117)",
+          "sidebar-primary-foreground": "oklch(1 0 0)",
+          "sidebar-accent": "oklch(1 0 0 / 10%)",
+          "sidebar-accent-foreground": "oklch(0.985 0 0)",
+          "sidebar-border": "oklch(1 0 0 / 10%)",
+          "sidebar-ring": "oklch(0.556 0 0)",
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)",
+          "fill-3": "oklch(1 0 0 / 14%)",
+          "fill-4": "oklch(1 0 0 / 18%)",
+          "field": "oklch(1 0 0 / 2.5%)",
+          "raised": "oklch(1 0 0 / 10%)",
+          "control": "oklch(0.269 0 0)",
+          "control-hover": "oklch(0.237 0 0)",
+          "primary-border": "oklch(1 0 0 / 10%)",
+          "primary-border-disabled": "oklch(1 0 0 / 15%)",
+          "control-border": "oklch(1 0 0 / 10%)",
+          "field-border": "oklch(1 0 0 / 15%)",
+          "syntax-foreground": "oklch(0.985 0 0)",
+          "syntax-comment": "oklch(0.708 0 0)",
+          "syntax-keyword": "oklch(0.704 0.191 22.216)",
+          "syntax-string": "oklch(0.882 0.059 254.128)",
+          "syntax-constant": "oklch(0.707 0.165 254.624)",
+          "syntax-function": "oklch(0.702 0.183 293.541)",
+          "syntax-variable": "oklch(0.837 0.128 66.29)",
+          "syntax-tag": "oklch(0.871 0.15 154.449)",
+          "syntax-added": "oklch(0.723 0.219 149.579 / 15%)",
+          "syntax-removed": "oklch(0.637 0.237 25.331 / 10%)",
+          "syntax-added-word": "oklch(0.723 0.219 149.579 / 30%)",
+          "syntax-removed-word": "oklch(0.637 0.237 25.331 / 30%)"
+        }
+      },
+      "docs": "SortUI theme installed — your :root and .dark variables now carry the SortUI values (tokens v2), and @theme inline maps the SortUI colours and the fixed radius ladder. Components from @sortui ship the SortUI tokens they use on their own; this theme sets the base values they are designed with. Fonts are not part of the theme: SortUI is set in Inter, with headings in the sans font."
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "A two-state button for switching an option on or off, such as view or formatting settings in a toolbar.",
+      "categories": [
+        "actions"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-fill-1": "var(--fill-1)",
+          "color-fill-2": "var(--fill-2)",
+          "text-sm--letter-spacing": "-0.005em"
+        },
+        "light": {
+          "fill-1": "oklch(0.556 0 0 / 5%)",
+          "fill-2": "oklch(0.556 0 0 / 8%)"
+        },
+        "dark": {
+          "fill-1": "oklch(1 0 0 / 5%)",
+          "fill-2": "oklch(1 0 0 / 10%)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "components/ui/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "A set of two-state buttons that share one selection state, allowing either a single pressed item or several at once.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "cn",
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@sortui/toggle"
+      ],
+      "files": [
+        {
+          "path": "components/ui/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "A small floating label that reveals extra context for a control when it is hovered or focused.",
+      "categories": [
+        "overlays"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "components/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "docs": "The `tooltip` component has been added. Remember to wrap your app with the `TooltipProvider` component.\n\n```tsx title=\"app/layout.tsx\"\nimport { TooltipProvider } from \"@/components/ui/tooltip\"\n\nexport default function RootLayout({ children }: { children: React.ReactNode }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <TooltipProvider>{children}</TooltipProvider>\n      </body>\n    </html>\n  )\n}\n```\n"
+    },
+    {
+      "name": "trace",
+      "type": "registry:ui",
+      "title": "AI Trace",
+      "description": "Lines of agent activity — reasoning, tool calls, searches, sources, plans and subagent runs — each with an icon, a title and an optional description and status, expandable into nested detail.",
+      "categories": [
+        "chat"
+      ],
+      "cssVars": {
+        "theme": {
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "text-xs--letter-spacing": "-0.005em",
+          "text-xs": "0.8125rem",
+          "text-xs--line-height": "calc(1.25 / 0.8125)"
+        },
+        "light": {
+          "destructive-foreground": "oklch(0.505 0.213 27.518)"
+        },
+        "dark": {
+          "destructive-foreground": "oklch(0.704 0.191 22.216)"
+        }
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@sortui/collapsible"
+      ],
+      "files": [
+        {
+          "path": "components/ui/trace.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "usage-bar",
+      "type": "registry:ui",
+      "title": "Usage Bar",
+      "description": "Shows how a whole is shared out — storage, a data plan, a quota — as one row of segments sized by their value, with a legend, an axis and a highlighted segment that a list beside it can follow.",
+      "categories": [
+        "feedback"
+      ],
+      "cssVars": {
+        "theme": {
+          "text-2xs--letter-spacing": "-0.005em",
+          "text-sm--letter-spacing": "-0.005em",
+          "text-2xs": "0.75rem",
+          "text-2xs--line-height": "calc(1 / 0.75)"
+        }
+      },
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "components/ui/usage-bar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "useMobile",
+      "description": "React hook that tracks whether the viewport is below the mobile breakpoint (768px).",
+      "files": [
+        {
+          "path": "hooks/use-mobile.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "description": "The cn() class-merge helper used by every component.",
+      "dependencies": [
+        "cn"
+      ],
+      "files": [
+        {
+          "path": "lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
