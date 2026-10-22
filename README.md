@@ -8,11 +8,11 @@ Documentation and live examples: https://sortui.dev/docs
 
 ## Install
 
-SortUI is a [shadcn registry](https://ui.shadcn.com/docs/registry). In a project set up with
+SortUI is a [shadcn registry](https://ui.shadcn.com/docs/registry) listed in the shadcn registry
+directory, so the CLI finds `@sortui` with no setup. In a project set up with
 `npx shadcn@latest init`:
 
 ```sh
-npx shadcn@latest registry add @sortui=https://sortui.dev/r/{name}.json
 npx shadcn@latest add @sortui/theme
 npx shadcn@latest add @sortui/button
 ```
